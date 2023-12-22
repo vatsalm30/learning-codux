@@ -5,4 +5,7 @@ export default createBoard({
     name: 'Input',
     Board: () => <Input />,
     isSnippet: true,
+    environmentProps: {
+        windowWidth: 1024
+    }
 });
