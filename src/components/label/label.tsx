@@ -3,7 +3,7 @@ import styles from './label.module.scss';
 
 export interface LabelProps {
     className?: string;
-    children?: JSX.Element | Array<JSX.Element|string> | string;
+    children?: JSX.Element | Array<JSX.Element | string> | string;
     htmlFor?: string;
 }
 
@@ -13,8 +13,8 @@ export interface LabelProps {
  */
 export const Label = ({ className, children, htmlFor }: LabelProps) => {
     return (
-        <div className={classNames(styles.root, className)}>
-            <label htmlFor={htmlFor}>{children}</label>
+        <div>
+            <label htmlFor={htmlFor} className="Label">{children}</label>
         </div>
     );
 };

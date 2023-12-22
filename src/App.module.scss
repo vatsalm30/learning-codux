@@ -1,51 +1,71 @@
 .App {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    text-align: center;
+    max-width: 25em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.logo {
-  padding: 1.25em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.logo.ts:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.logo.scss:hover {
-  filter: drop-shadow(0 0 2em #cc6698aa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
-.card {
-  padding: 2em;
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    display: block;
+    max-width: none;
+    width: 100%;
+    padding: 2em;
+    box-shadow: 0 0 17px rgba(0, 0, 0, 0.21);
+    border-radius: 0.4em;
+    margin: 0% 0% 0% 0px;
+    height: auto;
+}
+
+.description {
+    margin: 0em;
+}
+
+.note {
+    font-size: 0.8em;
+    color: #9A9BA4;
+}
+
+.title {
+    font-size: 2.5em;
+    margin: 1em 0em 0.5em;
+}
+
+.submit-icon {
+    margin-right: 0.5em;
 }
